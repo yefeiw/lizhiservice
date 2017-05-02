@@ -19,6 +19,7 @@ from selenium import webdriver
 #home url: Homepage of Beikao
 home_url = 'http://lizhi.fm/40624'
 output_file = 'dump_output.txt'
+types = ['吐槽','互撕','吃喝玩乐','嘉宾','特别','']
 #setup proxy
 #chrome_options = webdriver.ChromeOptions()
 try:
