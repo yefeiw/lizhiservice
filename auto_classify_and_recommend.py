@@ -22,22 +22,27 @@ output_file = 'dump_output.txt'
 #setup proxy
 #chrome_options = webdriver.ChromeOptions()
 try:
-	driver = webdriver.Chrome()   
+	driver = webdriver.Chrome()
 	driver.get(home_url)
-	#get the titles for each file
-	xpath_titles = driver.find_elements_by_xpath('//div/p[contains(@class,"audioName")]')
-	xpath_descriptions = driver.find_elements_by_xpath('//div[contains(@class,"audio-desc")]')
+        #get the refs for each file
+	xpath_refs = driver.find_elements_by_xpath('//ul[contains(@class,"js-audio-list")]')
+	#find the next page button
+	next_page = driver.find_elements_by_xpath('//a[contains(@class,"next")]')
 	import pdb; pdb.set_trace()
 	#output to file for storage for now
 	with open(output_file, 'w') as f:
 		#f.write(json.dumps(xpath_titles))
 		#f.write(json.dumps(xpath_descriptions))
-		for xpath_title in xpath_titles:
-			f.write(xpath_title.text)
-			f.write('\n')	
+		for xpath_ref in xpath_refs:
+			f.write(xpath_ref.__dir__().text)
+			f.write('\n')
+		f.write('##########################\n')
+		for xpath_next in next_page:
+			f.write(xpath_next.text)
+			f.write('\n')
 		f.close()
 except:
 		logging.error(traceback.print_exc())
 finally:
 	driver.close();
- 
+
