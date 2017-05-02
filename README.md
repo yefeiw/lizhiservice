@@ -1,4 +1,4 @@
-##################################Beikao Techinal Division##########################
+##################################Beikao Technical Division##########################
 
 This is the technical tools for Beikao to conveniently schedule new programs and enhance the current audio processing.
 This site will constantly be in development and we welcome all listeners with the following background to contribute to the tools.
