@@ -26,20 +26,21 @@ try:
 	driver = webdriver.Chrome()
 	driver.get(home_url)
         #get the refs for each file
-	xpath_refs = driver.find_elements_by_xpath('//ul[contains(@class,"js-audio-list")]')
+	xpath_audiolist= driver.find_element_by_xpath('//ul[contains(@class,"js-audio-list")]')
+	xpath_lists = xpath_audiolist.find_elements_by_xpath('li//a[contains(@class,"audio-list-item")]')
+
 	#find the next page button
 	next_page = driver.find_elements_by_xpath('//a[contains(@class,"next")]')
 	import pdb; pdb.set_trace()
 	#output to file for storage for now
-	with open(output_file, 'w') as f:
-		#f.write(json.dumps(xpath_titles))
-		#f.write(json.dumps(xpath_descriptions))
-		for xpath_ref in xpath_refs:
-			f.write(xpath_ref.text)
-			f.write('\n')
-		f.write('##########################\n')
+	with open(output_file, 'w') as f:		
+		for xpath_list in xpath_lists:
+			f.write (xpath_list.text)
+			f.write (xpath_list.get_attribute('href' ))
+		f.write('\n##########################\n')
 		for xpath_next in next_page:
 			f.write(xpath_next.text)
+			f.write(xpath_next.get_attribute('href'))
 			f.write('\n')
 		f.close()
 except:
