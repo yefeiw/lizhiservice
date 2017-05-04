@@ -22,7 +22,6 @@ from selenium import webdriver
 #home url: Homepage of Beikao
 home_url = 'http://lizhi.fm/40624'
 output_file = '../dump_output.txt'
-types = ['吐槽','互撕','吃喝玩乐','嘉宾','特别','热点','在美国','beikao default']
 ###util functions
 def if_xpath_exist(driver, xpath):
 	test = len(driver.find_elements_by_xpath(xpath))
@@ -41,18 +40,19 @@ def get_category(title,desc,types):
 
 ####################Structural Functions####################
 class LizhiCrawler:
-	def __init__(self):
+	def __init__(self,types):
+		self.types = types
 		return
 	def retrieve_hrefs(self,driver):
 		audio_list_addr = '//ul[contains(@class,"js-audio-list")]'
 		next_page_addr = '//a[contains(@class,"next")]'
 		hrefs = []
-		titles = []
 		try:
 
 			driver.get(home_url)
 		  
 			#find the next page button
+			#long version for full functionality
 			while if_xpath_exist(driver,audio_list_addr):
 				 #get the refs for each file
 				xpath_audiolist= driver.find_element_by_xpath(audio_list_addr)
@@ -61,25 +61,17 @@ class LizhiCrawler:
 					try:
 						ref = xpath_item.get_attribute('href')
 						hrefs.append(ref)
-						title = xpath_item.get_attribute('title')
-						titles.append(title)
 					except:
 						logging.error(traceback.print_exc())
 				if if_xpath_exist(driver,next_page_addr):
+					#test: break anyways
+					#break
+					#mainline: go to next page
 					next_page = driver.find_element_by_xpath(next_page_addr)
 					next_page.click()
 				else:
 					break
-				#time.sleep(1)
 			
-			#output to file for storage for now
-			# with open(output_file, 'w') as f:		
-			# 	for i in range(0,len(hrefs)):
-			# 		f.write(hrefs[i])
-			# 		if i < len(titles):
-			# 			f.write('\t'+titles[i])
-			# 		f.write('\n')
-			# 	f.close()
 		except:
 				logging.error(traceback.print_exc())
 		finally:
@@ -89,21 +81,21 @@ class LizhiCrawler:
 		categories = dict()
 		title_xpath = ('//h1[contains(@class,"audioName")]')
 		desc_xpath  =('//div[contains(@class,"desText")]')
-		for item in types:
+		for item in self.types:
 			categories[item] = []
 		try:
 			for href in hrefs:
 				print ("href is "+href)
 				driver.get(href)
 				time.sleep(1)
-				if not if_xpath_exist(title_xpath) or not if_xpath_exist(desc_xpath):
+				if  (if_xpath_exist(driver,title_xpath) is False) or (if_xpath_exist(driver,desc_xpath) is False):
 					print ("this href postition "+href+" is not valid, please manually verify later")
 					continue
 				title = driver.find_element_by_xpath(title_xpath)
 				desc = driver.find_element_by_xpath(desc_xpath)
 				#import pdb;pdb.set_trace()
-				category = get_category(title.text,desc.text,types)
-				categories[category].append(title)
+				category = get_category(title.text,desc.text,self.types)
+				categories[category].append(title.text)
 				print(category+": current count " + str(len(categories[category])))
 		except:
 			logging.error(traceback.print_exc())

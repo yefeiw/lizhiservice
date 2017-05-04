@@ -10,15 +10,35 @@ This site will constantly be in development and we welcome all listeners with th
 ##########  What are the tools and how to use them ##############
 
 auto_classify_and_recommend.py lists all major types of our program, to run them:
-python3 auto_classify_and_recommend.py
+
+python3 LizhiServiceMain.py
+
 @depends_on
+
 selenium and selenium webdriver (usage of both google'able)
 
+
+LizhiCrawler.py
+
+@depends_on
+
+selenium and selenium webdriver (usage of both google'able)
+
+LizhiMail.py
+
+@depends_on
+
+yagmail
 
 
 ############ Contact us #####################
 
 80talkshow@gmail.com or comments on this github repo.
+
+############ Special Thanks ###############
+https://github.com/leemunroe/responsive-html-email-template.git 
+https://github.com/kootenpv/yagmail
+And many, many more follow github'ers and stackoverflow'ers.
 
 
 
