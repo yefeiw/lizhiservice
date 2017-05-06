@@ -37,5 +37,4 @@ try:
 except:
 	logging.error(traceback.print_exc())
 finally:
-	#driver.close()
-	pass
+	driver.close()

@@ -4,7 +4,7 @@
 ### Dependencies:
 
 #   selenium: (pip install -U selenium)
-#   chrome web driver (google selenium web driver, and install accordingly
+#   relevant webdriver 
 
 import time
 import random

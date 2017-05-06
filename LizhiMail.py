@@ -28,5 +28,9 @@ class LizhiMail:
 	    username = '80talkshow@gmail.com'
 	    password = '80talkshow_1'
 	    smtp = yagmail.SMTP(username,password)
-	    smtp.send(to=self.receiver,subject=self.subject,contents = ['./email-inlined.html',self.attachment])
-	
+	    smtp.send(to=self.receiver,subject=self.subject,contents = ['./email-output.html',self.attachment])
+
+
+####unit test
+mail = LizhiMail('category.txt')
+mail.sendMail()
