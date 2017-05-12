@@ -1,0 +1,592 @@
+05/08/2017 10:57:34 - DEBUG - vce.py - /local/mnt/workspace/practice/python$ /prj/qct/asw/qctss/linux/bin/vce/vce.py view --base 527 --checkout mot_verify --image 710 --dest /local/mnt/workspace/
+05/08/2017 10:57:34 - INFO - vce.py - VCE, version 2.5.0.47
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:35 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client name: yefeiw-linux
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/practice/python
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Peer address: 10.43.32.127:25500
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:35 -0700 PDT
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server uptime: 307:48:02
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:35 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:35 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client name: yefeiw-linux
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/practice/python
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Peer address: 10.43.32.127:25501
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:35 -0700 PDT
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server uptime: 307:48:02
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:35 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Running: p4 set
+05/08/2017 10:57:35 - DEBUG - vce_common.py - P4PORT=qctp401:1666
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:35 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client name: yefeiw-linux
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/practice/python
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Peer address: 10.43.32.127:25511
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:35 -0700 PDT
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server uptime: 307:48:02
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:35 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:35 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client name: yefeiw-linux
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/practice/python
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Peer address: 10.43.32.127:25513
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:35 -0700 PDT
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server uptime: 307:48:02
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:35 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:35 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client name: yefeiw-linux
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/practice/python
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Peer address: 10.43.32.127:25515
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:35 -0700 PDT
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server uptime: 307:48:02
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:35 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:35 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:35 - INFO - view.py - Getting information for warehouse : AVS.ADSP.2.2
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Running: p4 -p aswp401.qualcomm.com:1666 -u yefeiw  changes -m 1 //source/qcom/qct/images/adsp/avs/rel/2.2/...
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Change 12567528 on 2017/03/01 by pwbldsvc@PWTemp_42b621ae-ff14-11e6-9cef-f0921c149848 '  Promoterequest by manigupt //'
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:36 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Client name: yefeiw-linux
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Peer address: 10.43.32.127:25577
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:36 -0700 PDT
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Server uptime: 307:48:03
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:36 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:36 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:38 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Client name: yefeiw-linux
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Peer address: 10.43.32.127:25656
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:38 -0700 PDT
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server uptime: 307:48:05
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:38 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:38 - INFO - view.py - For Warehouse AVS.ADSP.2.2 Checking if user has valid check-in permission
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:38 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Client name: yefeiw-linux
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Peer address: 10.43.32.127:25672
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:38 -0700 PDT
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server uptime: 307:48:05
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:38 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:38 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:47 - INFO - vce_common.py - User has appropriate permission to check-in
+05/08/2017 10:57:48 - INFO - view.py - Image found in warehouse : 527
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:48 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Peer address: 10.43.32.127:26217
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:48 -0700 PDT
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server uptime: 307:48:15
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:48 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:48 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Peer address: 10.43.32.127:26218
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:48 -0700 PDT
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server uptime: 307:48:15
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:48 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:48 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Peer address: 10.43.32.127:26224
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:48 -0700 PDT
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server uptime: 307:48:15
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:48 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:48 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Peer address: 10.43.32.127:26225
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:48 -0700 PDT
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server uptime: 307:48:15
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:48 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:48 - INFO - view.py - Retrieving User Permission
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:48 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Peer address: 10.43.32.127:26241
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:48 -0700 PDT
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server uptime: 307:48:15
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:48 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:48 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Peer address: 10.43.32.127:26250
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:48 -0700 PDT
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server uptime: 307:48:15
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:48 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:48 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:49 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Peer address: 10.43.32.127:26290
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:49 -0700 PDT
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Server uptime: 307:48:16
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:49 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:49 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:50 - INFO - view.py - Syncing Image from Perforce
+05/08/2017 10:57:50 - INFO - view.py - Retrieving build manifest from server...
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:50 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Peer address: 10.43.32.127:26309
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:50 -0700 PDT
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server uptime: 307:48:17
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:50 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:50 - INFO - view.py - PLF file location = //source/qcom/qct/images/pkg/targets/adsp/avs/rel/2.2/VCEImageSyncArtifact_710.plf#1
+05/08/2017 10:57:50 - INFO - view.py - Retrieving CRM Info from server...
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:50 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Peer address: 10.43.32.127:26338
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:50 -0700 PDT
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server uptime: 307:48:17
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:50 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:50 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:51 - INFO - view.py - Successfully fetched information about variant :710
+05/08/2017 10:57:51 - INFO - view.py - crm_info.txt has been created at /local/mnt/workspace/AVS.ADSP.2.2.mot_verify/vce/crm_info.txt
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:57:51 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Peer address: 10.43.32.127:26385
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Server date: 2017/05/08 10:57:51 -0700 PDT
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Server uptime: 307:48:18
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:57:51 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:57:51 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:52 - INFO - view.py - Creating temporary client spec [yefeiw.AVS.ADSP.2.2.mot_verify.fullimage] for non-PW code...
+05/08/2017 10:57:52 - DEBUG - vce_common.py - Running: p4 -p aswp401.qualcomm.com:1666 -u yefeiw -c yefeiw.AVS.ADSP.2.2.mot_verify.fullimage client -i
+05/08/2017 10:57:52 - DEBUG - vce_common.py - Client yefeiw.AVS.ADSP.2.2.mot_verify.fullimage saved.
+05/08/2017 10:57:52 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:57:52 - INFO - view.py - manifest_file_loc = /local/mnt/workspace/AVS.ADSP.2.2.mot_verify/vce/crm_manifest.log
+05/08/2017 10:57:52 - INFO - view.py - Syncing non-PW code using [aswp401.qualcomm.com:1666]... (this may take several minutes)
+05/08/2017 10:57:52 - INFO - view.py - Executing SyncSource command:/prj/qct/asw/qctss/linux/bin/SyncSource -f /local/mnt/workspace/AVS.ADSP.2.2.mot_verify/vce/crm_manifest.log -uselocalplf -cspec yefeiw.AVS.ADSP.2.2.mot_verify.fullimage -server aswp401:1666 -overwrite -r /local/mnt/workspace/AVS.ADSP.2.2.mot_verify -p ADSP.BF.2.2 -ref ADSP.BF.2.2-00471-M8626AAAAAAAZL-3
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 10:59:24 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Client unknown.
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Peer address: 10.43.32.127:32072
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Server date: 2017/05/08 10:59:24 -0700 PDT
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Server uptime: 307:49:51
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 10:59:24 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 10:59:24 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:59:25 - DEBUG - vce_common.py - Running: p4 -p aswp401.qualcomm.com:1666 -u yefeiw -c yefeiw.AVS.ADSP.2.2.mot_verify client -i
+05/08/2017 10:59:25 - DEBUG - vce_common.py - Client yefeiw.AVS.ADSP.2.2.mot_verify saved.
+05/08/2017 10:59:25 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 10:59:25 - INFO - view.py - Create dev branch for id : AVS.ADSP.2.2
+05/08/2017 10:59:25 - INFO - view.py - Dev branch path : //source/qcom/qct/images/adsp/avs/dev/yefeiw.AVS.ADSP.2.2.mot_verify/...
+05/08/2017 10:59:25 - INFO - view.py - View name : mot_verify
+05/08/2017 11:03:46 - INFO - view.py - Dev branch is created.
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Running: p4 -p aswp401.qualcomm.com:1666 -u yefeiw -c yefeiw.AVS.ADSP.2.2.mot_verify changes -m 1 //source/qcom/qct/images/adsp/avs/dev/yefeiw.AVS.ADSP.2.2.mot_verify/...
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Change 13245326 on 2017/05/08 by yefeiw@yefeiw.AVS.ADSP.2.2.mot_verify '       Creation of dev branch f'
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 11:03:46 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Client root: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Peer address: 10.43.32.127:56658
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Server date: 2017/05/08 11:03:46 -0700 PDT
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Server uptime: 307:54:13
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 11:03:46 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 11:03:46 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Client root: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:46 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Peer address: 10.43.32.127:56702
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server date: 2017/05/08 11:03:46 -0700 PDT
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server uptime: 307:54:13
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 11:03:47 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 11:03:47 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Client root: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Peer address: 10.43.32.127:56728
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server date: 2017/05/08 11:03:47 -0700 PDT
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server uptime: 307:54:14
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 11:03:47 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 11:03:47 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Client root: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Peer address: 10.43.32.127:56751
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server date: 2017/05/08 11:03:47 -0700 PDT
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server uptime: 307:54:14
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 11:03:47 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 11:03:47 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Client root: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Peer address: 10.43.32.127:56771
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server date: 2017/05/08 11:03:47 -0700 PDT
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server uptime: 307:54:14
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 11:03:47 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 11:03:47 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 11:03:47 - INFO - vce_view.py - Successfully synced to /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:48 - INFO - view.py - Getting the image information to create manifest file.
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 11:03:48 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Client root: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Peer address: 10.43.32.127:56793
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Server date: 2017/05/08 11:03:48 -0700 PDT
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Server uptime: 307:54:15
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 11:03:48 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 11:03:48 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 11:03:48 - INFO - view.py - Generating the Manifest file. Please wait..
+05/08/2017 11:03:48 - INFO - view.py - Running: /prj/qct/asw/qctss/linux/bin/Create_Manifest -b ADSP.BF.2.2-00471-M8626AAAAAAAZL-3 -p /local/mnt/workspace/AVS.ADSP.2.2.mot_verify -l
+05/08/2017 11:03:49 - INFO - view.py - Please execute the setbuildenv.cmd (setbuildenv.sh in case of linux), before you run the build command.
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Running: p4 info
+05/08/2017 11:03:49 - DEBUG - vce_common.py - User name: yefeiw
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Client name: yefeiw.AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Client host: yefeiw-linux
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Client root: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Current directory: /local/mnt/workspace/AVS.ADSP.2.2.mot_verify
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Peer address: 10.43.32.127:56941
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Client address: 10.52.100.209
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Server address: aswp401.qualcomm.com:1669
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Server root: /p4/qctp401_online/p4root
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Server date: 2017/05/08 11:03:49 -0700 PDT
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Server uptime: 307:54:16
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Server version: P4D/LINUX26X86_64/2016.2/1468155 (2016/11/28)
+05/08/2017 11:03:49 - DEBUG - vce_common.py - ServerID: qctp401
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Server services: standard
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Broker address: aswp401.qualcomm.com:1666
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Broker version: P4BROKER/LINUX26X86_64/2016.2/1457671
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Server license: QUALCOMM Technologies Inc 8300 users (support ends 2018/03/16) (expires 2018/03/16) 
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Server license-ip: 10.43.32.16
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Case Handling: insensitive
+05/08/2017 11:03:49 - DEBUG - vce_common.py - Process finished with exit code 0
+05/08/2017 11:03:49 - INFO - vce.py - VCE log files created:
+05/08/2017 11:03:49 - INFO - vce.py -  /local/mnt/workspace/practice/python/vce.log
+05/08/2017 11:03:49 - INFO - vce.py -  /local/mnt/workspace/AVS.ADSP.2.2.mot_verify/vce/SyncSource.log
+05/08/2017 11:03:49 - INFO - vce.py -  /local/mnt/workspace/AVS.ADSP.2.2.mot_verify/vce/crm_delete_client.log
+05/08/2017 11:03:49 - INFO - vce.py -  /local/mnt/workspace/AVS.ADSP.2.2.mot_verify/vce/view.log

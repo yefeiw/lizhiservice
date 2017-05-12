@@ -10,6 +10,8 @@ import logging
 import traceback
 #deepcopy utils
 import copy
+#search for added markups
+import re
 
 
 class LizhiSoup:
@@ -31,13 +33,21 @@ class LizhiSoup:
 						continue
 					#create new tag
 					#text_replacement.string = line
-					new_line = instance.new_tag('p')
-					
-					#replace string in that tag
-					#add the tag as a child to the list of texts
-					text_replacement.append(new_line)
-					new_line.string = line
-					new_line.style = instance.find('p',id='example_css').style
+					if re.search("title",line):
+						new_line = instance.new_tag('h3')
+						text_replacement.append(new_line)
+						new_line.string = line.split('#')[1]
+						new_line.style = instance.find('p',id='example_css').style
+					elif re.search("host",line):
+						new_line = instance.new_tag('h3')
+						text_replacement.append(new_line)
+						new_line.string = line.split('#')[1]
+						new_line.style = instance.find('p',id='example_css').style
+					else:
+						new_line = instance.new_tag('p')
+						text_replacement.append(new_line)
+						new_line.string = line
+						new_line.style = instance.find('p',id='example_css').style
 				f.close()
 			with open(self.out_file, "w") as file:
 				file.write(str(instance))
@@ -47,7 +57,7 @@ class LizhiSoup:
 		finally:
 			pass
 
-
-test_object = LizhiSoup('./email-inlined.html','./category.txt','./email-output.html')
-test_object.parse()
+if __name__ =='__main__':
+	test_object = LizhiSoup('./email-inlined.html','./category.txt','./email-output.html')
+	test_object.parse()
 

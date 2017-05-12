@@ -17,20 +17,29 @@ import re
 
 	    
 class LizhiMail:
-	def __init__(self,attachment):
+	def __init__(self):
+			recipient_list = '../hosts.txt'
 			self.sender = '80talkshow@gmail.com'
-			self.receiver = 'jeffxanthus@gmail.com'
+			self.receiver = []
+			with open(recipient_list,'r') as f:
+				lines = f.readlines()
+				for line in lines:
+					self.receiver.append(line)
 			self.subject = 'Beikao Weekly'
-			self.attachment = attachment
+			self.attachment = ""
 
 
 	def sendMail(self):
-	    username = '80talkshow@gmail.com'
-	    password = '80talkshow_1'
-	    smtp = yagmail.SMTP(username,password)
-	    smtp.send(to=self.receiver,subject=self.subject,contents = ['./email-output.html',self.attachment])
+		profile_input = '../profile.txt'
+		with open(profile_input,'r') as f:
+			lines = f.readlines()
+			username = lines[0]
+			password = lines[1]
+			smtp = yagmail.SMTP(username,password)
+			smtp.send(to=self.receiver,subject=self.subject,contents = ['./email-output.html',self.attachment])
 
 
 ####unit test
-mail = LizhiMail('category.txt')
-mail.sendMail()
+if __name__ =='__main__':
+	mail = LizhiMail()
+	mail.sendMail()

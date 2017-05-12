@@ -38,11 +38,44 @@ def get_category(title,desc,types):
 			return item
 	return "beikao default"
 
+##class declaration reserved for future use
+class LizhiStat:
+	def __init__(self):
+		self.title = ""
+		self.description=""
+		self.viewed = 0
+		self.hosts = []
+		self.visitors = []
+
+
+		
+
 ####################Structural Functions####################
 class LizhiCrawler:
-	def __init__(self,types):
+	def __init__(self,types,hosts):
 		self.types = types
+		self.hosts = hosts
+		self.categories = dict()
+		self.hostcount = dict()
+		self.recentshow = dict()
 		return
+	def add_hosts(self,desc,timestamp):
+		lines = desc.text.split('\n')
+		for line in lines:
+			#import pdb; pdb.set_trace()
+			if re.search("本期主播：",line):
+				for host in self.hosts:
+					if re.search(host,line):
+						print("found host"+host+"\n")
+						if self.hostcount[host] is 0:
+							self.recentshow[host] = timestamp.text
+						self.hostcount[host] +=1
+	def get_categories(self):
+		return self.categories
+	def get_hostcount(self):
+		return self.hostcount
+	def get_recentshow(self):
+		return self.recentshow
 	def retrieve_hrefs(self,driver):
 		audio_list_addr = '//ul[contains(@class,"js-audio-list")]'
 		next_page_addr = '//a[contains(@class,"next")]'
@@ -77,12 +110,16 @@ class LizhiCrawler:
 		finally:
 			return hrefs
 
-	def generate_categories(self,driver, hrefs):
-		categories = dict()
+	def process(self,driver, hrefs):
+	
 		title_xpath = ('//h1[contains(@class,"audioName")]')
 		desc_xpath  =('//div[contains(@class,"desText")]')
+		timestamp_xpath = ('//span[contains(@class,"audioTime")]')
 		for item in self.types:
-			categories[item] = []
+			self.categories[item] = []
+		for person in self.hosts:
+			self.hostcount[person] = 0
+			self.recentshow[person] = ""
 		try:
 			for href in hrefs:
 				print ("href is "+href)
@@ -93,14 +130,15 @@ class LizhiCrawler:
 					continue
 				title = driver.find_element_by_xpath(title_xpath)
 				desc = driver.find_element_by_xpath(desc_xpath)
+				timestamp = driver.find_element_by_xpath(timestamp_xpath)
 				#import pdb;pdb.set_trace()
 				category = get_category(title.text,desc.text,self.types)
-				categories[category].append(title.text)
-				print(category+": current count " + str(len(categories[category])))
+				self.add_hosts(desc,timestamp)
+				self.categories[category].append(title.text)
+				print(category+": current count " + str(len(self.categories[category])))
 		except:
 			logging.error(traceback.print_exc())
 		finally:
-			return categories
-
+			pass
 
 
