@@ -5,8 +5,8 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-public interface BroadcastItemRepository extends MongoRepository<BroadcastItem,Integer> {
+public interface BroadcastItemRepository extends MongoRepository<BroadcastItem,String> {
    //find by category
-    List<BroadcastItem> findAllByCategory(@Param("username") String category);
-    BroadcastItem findById(@Param("id") int id);
+    List<BroadcastItem> findAllByCategory(@Param("category") String category);
+    BroadcastItem findById(@Param("id") String id);
 }

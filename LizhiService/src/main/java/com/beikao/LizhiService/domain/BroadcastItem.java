@@ -17,7 +17,7 @@ public class BroadcastItem implements Serializable{
 
     @Id
     //ID of this broadcast
-    public int id;
+    public String id;
     //Title of this broadcast
     public String title;
     //Full text of this broadcast
@@ -30,7 +30,7 @@ public class BroadcastItem implements Serializable{
     public int numViews;
 
    @JsonCreator
-   public BroadcastItem(@JsonProperty("id")int id,
+   public BroadcastItem(@JsonProperty("id")String id,
                         @JsonProperty("title")String title,
                         @JsonProperty("desc")String desc,
                         @JsonProperty("category")String category,

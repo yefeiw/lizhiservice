@@ -12,8 +12,6 @@ public interface BroadcastService {
     List<BroadcastItem> findAllByHostName(String name);
     //Save broadcast item to repo
     BroadcastItem saveItem(BroadcastItem item);
-    //Save broadcast item to host
-    Host saveHost(String name, BroadcastItem item);
     //Find all broadcasts
     List<BroadcastItem> findAll();
     //Crawl all related broadcasts and update record

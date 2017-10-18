@@ -13,6 +13,9 @@ import java.net.SocketTimeoutException;
 import java.util.*;
 import java.util.logging.Logger;
 
+import static com.beikao.LizhiService.domain.HostName.getHosts;
+import static com.beikao.LizhiService.domain.HostName.hosts;
+
 public class Crawler {
     //String constants
     private static final String USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36";
@@ -22,22 +25,11 @@ public class Crawler {
     private final String LIZHI_HOME_URL = "http://lizhi.fm/40624/p/";
 
     private static final Logger logger = Logger.getLogger("crawler");
-    private static final String[] hosts = {
-            "Ada",
-            "丫头",
-            "Ruby",
-            "豆包",
-            "老王",
-            "黑人",
-            "小哈",
-            "奔奔",
-            "九月",
-            "波波",
-            "大白"
-    };
+
 
     public void initProxy() {
-        System.setProperty("http.proxyHost", "199.101.97.159"); // set proxy server
+
+        System.setProperty("http.proxyHost", "199.101.97.178"); // set proxy server
         System.setProperty("http.proxyPort", "60099"); // set proxy port
         Authenticator.setDefault(
                 new Authenticator() {
@@ -64,15 +56,7 @@ public class Crawler {
         }
     }
 
-    private List<String> getHosts(String hostText) {
-        List<String> ret = new ArrayList<>();
-        for (String host : hosts) {
-           if (hostText.indexOf(host)!= -1) {
-               ret.add(host);
-           }
-        }
-        return ret;
-    }
+
 
 
     public List<BroadcastItem> getLizhiItems() {
@@ -94,8 +78,8 @@ public class Crawler {
                 try {
                     doc = Jsoup.connect(url).maxBodySize(0).headers(headers).userAgent(USER_AGENT).timeout(3000).get();
                     Thread.sleep(500);
-                } catch (SocketTimeoutException e) {
-                    //try it again
+                } catch (Exception e) {
+                    //try it again no matter what exception is reported.
                     logger.warning("timeout occurs, trying again");
                     continue;
                 }
@@ -113,7 +97,8 @@ public class Crawler {
                     Document details;
                     try {
                         details = Jsoup.connect(href).maxBodySize(0).headers(headers).userAgent(USER_AGENT).timeout(3000).get();
-                    } catch (SocketTimeoutException e) {
+                    } catch (Exception e) {
+                        //No matter what exception is reported, should try it again.
                         i--;
                         programID--;
                         continue;
@@ -145,11 +130,13 @@ public class Crawler {
                     }
                     logger.info("Host is "+ hosts);
                     logger.info("Category is "+getCategory(text));
-                    BroadcastItem item = new BroadcastItem(id,title,text,getCategory(text),hosts);
+                    BroadcastItem item = new BroadcastItem(String.valueOf(id),title,text,getCategory(text),hosts);
                     ret.add(item);
                 }
                 if(doc.getElementsByClass("next").size() > 0) {
                     pageNum++;
+                    //TODO: comment it out in production code, enable it for testing purposes;
+                    //hasNextPage =false;
                 } else {
                     hasNextPage = false;
                 }
