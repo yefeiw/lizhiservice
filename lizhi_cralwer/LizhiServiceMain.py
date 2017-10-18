@@ -15,7 +15,7 @@ import LizhiSoup
 
 from selenium import webdriver
 types = ['吐槽','互撕','吃喝玩乐','嘉宾','特别','热点','在美国','beikao default']
-hosts = ['Ada','丫头','Ruby','豆包','老王','黑人','奔','阿瓜','小哈','小龙哥','九月']
+hosts = ['Ada','丫头','Ruby','豆包','老王','黑人','奔','阿瓜','小哈','小龙哥','九月','大白','波波']
 
 crawler = LizhiCrawler.LizhiCrawler(types,hosts)
 soup = LizhiSoup.LizhiSoup('./email-inlined.html','./category.txt','./email-output.html')
@@ -43,7 +43,7 @@ try:
 		f.close()
 
 	soup.parse()
-	#mail.sendMail()
+	mail.sendMail()
 
 	
 except:
