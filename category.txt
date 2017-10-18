@@ -17,7 +17,7 @@ total length: 4
 
 
 title#嘉宾
-total length: 30
+total length: 31
 
 
 
@@ -37,16 +37,16 @@ total length: 25
 
 
 title#beikao default
-total length: 47
+total length: 48
 host#Ada: 
-	total recordings: 31
-	most recent appearance 2017-04-28
+	total recordings: 33
+	most recent appearance 2017-05-25
 host#丫头: 
 	total recordings: 20
 	most recent appearance 2017-04-28
 host#Ruby: 
-	total recordings: 16
-	most recent appearance 2017-05-09
+	total recordings: 17
+	most recent appearance 2017-05-17
 host#豆包: 
 	total recordings: 9
 	most recent appearance 2017-04-06
@@ -54,11 +54,11 @@ host#老王:
 	total recordings: 25
 	most recent appearance 2017-04-28
 host#黑人: 
-	total recordings: 22
-	most recent appearance 2017-05-09
+	total recordings: 23
+	most recent appearance 2017-05-17
 host#奔: 
-	total recordings: 10
-	most recent appearance 2017-05-09
+	total recordings: 11
+	most recent appearance 2017-05-25
 host#阿瓜: 
 	total recordings: 9
 	most recent appearance 2017-04-28

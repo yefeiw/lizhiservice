@@ -15,7 +15,7 @@ import traceback
 #email utilities
 import smtplib
 import re
-
+import matplotlib.pyplot as plt
 ###cross file checks
 
 from selenium import webdriver
