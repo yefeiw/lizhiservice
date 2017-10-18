@@ -16,4 +16,6 @@ public interface BroadcastService {
     List<BroadcastItem> findAll();
     //Crawl all related broadcasts and update record
     void crawl();
+    //Send email about the latest statistics
+    void sendEmail();
 }

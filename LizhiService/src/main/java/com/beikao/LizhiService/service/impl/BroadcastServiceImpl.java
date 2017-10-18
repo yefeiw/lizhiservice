@@ -7,10 +7,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.AddressException;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+import java.util.*;
 
 @Service
 
@@ -60,24 +64,47 @@ public class BroadcastServiceImpl implements BroadcastService {
                     hostList.add(item);
                     hostStats.put(hostName,hostList);
                 }
-//                    Host host = hostRepository.findByHostName(hostName);
-//                    if (host == null) {
-//                        int index = 0;
-//                        for (index = 0; index < Crawler.hosts.length; index++) {
-//                            if (Crawler.hosts[index].equals(hostName)) break;
-//                        }
-//                        if (index >= Crawler.hosts.length) {
-//                            logger.warn("Host name " + hostName + "not found, discarding");
-//                            continue;
-//                        }
-//                        host = new Host(String.valueOf(index), hostName);
-//                    }
-//                    host.addItem(item);
-//                    hostRepository.save(host);
-//                }
             }
         } catch(Exception e) {
             e.printStackTrace();
         }
+    }
+    @Override
+    public void sendEmail() {
+        try {
+            generateAndSendEmail();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    private void generateAndSendEmail() throws AddressException, MessagingException {
+
+        // Step1
+        Properties mailServerProperties = System.getProperties();
+        mailServerProperties.put("mail.smtp.port", "587");
+        mailServerProperties.put("mail.smtp.auth", "true");
+        mailServerProperties.put("mail.smtp.starttls.enable", "true");
+
+        // Step2
+        Session getMailSession = Session.getDefaultInstance(mailServerProperties, null);
+        MimeMessage generateMailMessage = new MimeMessage(getMailSession);
+        generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("jeffxanthus@gmail.com"));
+        generateMailMessage.setSubject("Discounts!");
+        String emailBody = "Hi Dear Teammates" +
+                "<br><br>Here are the latest updates of our statistics</br>";
+       //TODO: add email body for each member.
+        emailBody += "<br> Regards, <br>Yefei Wang";
+        generateMailMessage.setContent(emailBody, "text/html");
+
+        // Step3
+        System.out.println("\n\n Get Session and Send mail");
+        Transport transport = getMailSession.getTransport("smtp");
+
+        // Enter your correct gmail UserID and Password
+        // if you have 2FA enabled then provide App Specific Password
+        transport.connect("smtp.gmail.com", "jeffxanthus@gmail.com", "AT900-Technique");
+        transport.sendMessage(generateMailMessage, generateMailMessage.getAllRecipients());
+        System.out.println("Email sent successfully");
+        transport.close();
     }
 }

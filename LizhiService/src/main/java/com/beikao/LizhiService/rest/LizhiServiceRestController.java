@@ -29,6 +29,10 @@ public class LizhiServiceRestController {
         service.crawl();
     }
 
+    @RequestMapping(value = "/email",method = RequestMethod.GET)
+    public void sendEmails() {
+        service.sendEmail();
+    }
     @RequestMapping(value = "/hosts/{hostName}",method = RequestMethod.GET)
     public List<BroadcastItem> displayHostStats(@PathVariable String hostName) {
         return service.findAllByHostName(hostName);
