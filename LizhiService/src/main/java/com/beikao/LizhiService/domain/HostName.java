@@ -39,4 +39,13 @@ public class HostName {
         }
         return ret;
     }
+    public static List<String> getHostNames(String hostText) {
+        List<String> ret = new ArrayList<>();
+        for (int i = 0; i < hosts.length; i++) {
+            if (hostText.indexOf(hostEncodings[i])!= -1) {
+                ret.add(hosts[i]);
+            }
+        }
+        return ret;
+    }
 }

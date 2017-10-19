@@ -130,7 +130,9 @@ public class Crawler {
                     }
                     logger.info("Host is "+ hosts);
                     logger.info("Category is "+getCategory(text));
+                    String date = details.getElementsByClass("audioTime").text();
                     BroadcastItem item = new BroadcastItem(String.valueOf(id),title,text,getCategory(text),hosts);
+                    item.setDate(date);
                     ret.add(item);
                 }
                 if(doc.getElementsByClass("next").size() > 0) {
