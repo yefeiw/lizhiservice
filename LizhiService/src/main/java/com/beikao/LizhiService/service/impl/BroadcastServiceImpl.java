@@ -89,12 +89,24 @@ public class BroadcastServiceImpl implements BroadcastService {
         Session getMailSession = Session.getDefaultInstance(mailServerProperties, null);
         MimeMessage generateMailMessage = new MimeMessage(getMailSession);
         generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("jeffxanthus@gmail.com"));
-        generateMailMessage.setSubject("Discounts!");
+        generateMailMessage.setSubject("Beikao Weekly -- Java Platform");
         String emailBody = "Hi Dear Teammates" +
                 "<br><br>Here are the latest updates of our statistics</br>";
        //TODO: add email body for each member.
-        emailBody += "<br> Regards, <br>Yefei Wang";
-        generateMailMessage.setContent(emailBody, "text/html");
+        for(String name : HostName.hostEncodings) {
+            List<BroadcastItem> list = findAllByHostName(name);
+            //Assumption: the first item in the list is always the recent item.
+            int cnt =  list.size();
+            String date = "";
+            if (cnt > 0) {
+                BroadcastItem recent = list.get(0);
+                date = recent.getDate();
+            }
+            emailBody+= "<br> Host Name: "+HostName.getHostNames(name).get(0)+"</br><br> Total Recordings: "+cnt+"</br><br> Last Apppearance: "+date+"</br><br></br>";
+        }
+        emailBody += "<br> Beikao Technical Division </br>";
+        //Adding utf-8 support for Chinese contents
+        generateMailMessage.setContent(emailBody, "text/html;charset=utf-8");
 
         // Step3
         System.out.println("\n\n Get Session and Send mail");

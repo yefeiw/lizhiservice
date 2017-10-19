@@ -28,6 +28,8 @@ public class BroadcastItem implements Serializable{
     public List<String> hosts;
     //Views
     public int numViews;
+    //Date of the broadcast
+    public String date;
 
    @JsonCreator
    public BroadcastItem(@JsonProperty("id")String id,
